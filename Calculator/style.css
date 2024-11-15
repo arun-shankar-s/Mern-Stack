@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*without this vertically aligns accorsding to the content inside the body*/
+    background-color: #474646;
+}
+
+.calculator{
+    position: relative;
+    width: 290px;
+    background-color: #fff;
+    border-radius:10px ;
+    padding: 20px;/*Distance between the content inside calculator and th calculator's border*/
+    height: 450px;
+}
+
+.display{
+    position: absolute;
+    background-color: rgb(214, 214, 220);
+    top:20px;
+    left: 20px;
+    right: 20px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 45px;
+    color: #4f4f4c;
+}
+
+.buttons{
+    position: absolute;
+    top: 90px;
+    gap: 20px;
+    bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10px;
+}
+
+button.btn{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease ;
+}
+
+
+button.btn:hover {
+    background-color: #ddd;
+}
+
+button#btnclr {
+    background-color: #f87c7c;
+    color: #fff;
+}
+
+button#btnback {
+    background-color: #aeaea9;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px;
+}
+
+
+
+button#btnenter {
+    background-color: #4caf50;
+    color: #fff;
+    grid-column: span 3;
+}
+
+button#btnadd {
+    background-color: #f0a500;
+}
+
+button#btnsub {
+    background-color: #f0a500;
+}
+
+button#btnmult {
+    background-color: #f0a500;
+}
+
+button#btndiv {
+    background-color: #f0a500;
+}
